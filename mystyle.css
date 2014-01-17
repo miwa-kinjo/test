@@ -1,0 +1,123 @@
+/* mystyle.css */
+@charset "utf-8";
+
+/*
+ * スマホ: 320px - 480px
+ * タブレット: 480px - 768px
+ * PC: 768px以上
+*/
+
+/* 共通の設定 */
+
+body {
+	font-family: Arial, Verdana, san-serif;
+	width: 95%;
+	margin: 0 auto;
+}
+
+#header {
+	background: red;
+}
+
+#footer {
+}
+
+#container {
+}
+
+#main {
+	background: orange;
+}
+
+#sub {
+	background: yellow;
+}
+
+#footerNavLink {
+	float: right;
+}
+
+#headerNav ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+#headerNav li {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+/*
+p.resize {
+	width:100%;
+}
+*/
+
+img {
+	max-width: 100%;
+}
+
+#fooerNav { 
+	overflow: hidden;
+}
+
+#footerNav li {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+#footer > p {
+	margin-top:10px;
+	font-size: 12px;
+	text-align: center;
+} 
+
+.movie {
+	position: relative;
+	height: 0;
+	padding-top: 56.25%; /* 16:9 */
+}
+
+iframe {
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+/* スマホのスタイル */
+#headerNav {
+	display: none;
+}
+
+/* タブレットのスタイル */
+
+@media all and (min-width: 480px){
+	
+	#footerNavLink {
+		display: none;
+	}
+	#headerNav {
+		display: block;
+	}
+	#footerNav {
+		display: none;
+	}
+}
+
+/* PCのスタイル */
+
+/*
+ * all: 980px;
+ * sub: 200px;
+ * margin: 15px;
+ * main: 765px;
+*/
+
+@media all and (min-width: 768px){
+
+
+}
